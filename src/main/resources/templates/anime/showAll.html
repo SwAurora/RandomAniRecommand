@@ -17,9 +17,21 @@
             <span th:text="${anime.title}"></span>
         </div>
     </div>
+    <div id="pagination">
+       <div id="pages">
+
+       </div>
+    </div>
 </section>
 
 <footer th:replace="~{fragment/footer.html :: footer}"></footer>
 <script th:src="@{/js/showByRandom.js}"></script>
+
+<script>
+    const totalCount = [[${total}]];
+    const row = [[${row}]];
+    const nowPage = [[${nowPage}]];
+</script>
+<script th:src="@{/js/showAll.js}"></script>
 </body>
 </html>

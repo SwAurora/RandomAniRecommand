@@ -10,7 +10,7 @@ import org.springframework.data.domain.PageRequest;
 import java.util.List;
 
 @SpringBootTest
-public class ForPage
+public class PagingTest
 {
     @Autowired
     AnimeRepository repository;
@@ -23,5 +23,12 @@ public class ForPage
         {
             System.out.println(anime);
         }
+    }
+
+    @Test
+    void test2()
+    {
+        long count = repository.count();
+        System.out.println(count);
     }
 }

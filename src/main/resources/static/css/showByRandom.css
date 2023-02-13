@@ -1,3 +1,17 @@
+#contents
+{
+    height: 72vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contents button
+{
+    margin-top: 4vh;
+}
+
 #contents img
 {
     cursor: pointer;

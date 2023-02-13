@@ -24,8 +24,13 @@ public class AnimeService
         return repository.findByTitle(title);
     }
 
-    public List<Anime> findAllByPage(int page)
+    public List<Anime> findAllByPage(int page, int row)
     {
-        return repository.findAllByPage(PageRequest.of(page, 20));
+        return repository.findAllByPage(PageRequest.of(page, row));
+    }
+
+    public long getCount()
+    {
+        return repository.count();
     }
 }

@@ -12,9 +12,9 @@
 
 <section>
     <div id="contents">
-        <img th:src="${anime.thumb}" src="#" alt="#" th:attr="onclick=|goInfo('${anime.title}')|"><br>
-        <span th:text="${anime.title}"></span><br>
-        <span th:text="|장르: ${anime.genre}|"></span><br><br>
+        <img th:src="${anime.thumb}" src="#" alt="#" th:attr="onclick=|goInfo('${anime.title}')|">
+        <span th:text="${anime.title}"></span>
+        <span th:text="|장르: ${anime.genre}|"></span>
         <button onclick="reset()">RESET</button>
     </div>
 </section>

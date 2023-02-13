@@ -18,6 +18,8 @@ public class AnimeController
 {
     private final AnimeService service;
 
+    private static final int ROW = 20;
+
     @GetMapping("/random")
     public String showByRandom(Model model)
     {
@@ -27,18 +29,20 @@ public class AnimeController
     }
 
     @GetMapping("/all")
-    public String ShowAll(Model model)
+    public String ShowAll()
     {
-        List<Anime> animeList = service.findAllByPage(0);
-        model.addAttribute("animeList", animeList);
-        return "anime/showAll";
+        return "redirect:/anime/all/1";
     }
 
     @GetMapping("/all/{page}")
     public String ShowAll(@PathVariable int page, Model model)
     {
-        List<Anime> animeList = service.findAllByPage(page);
+        List<Anime> animeList = service.findAllByPage(page - 1, ROW);
         model.addAttribute("animeList", animeList);
+        long count = service.getCount();
+        model.addAttribute("total", count);
+        model.addAttribute("row", ROW);
+        model.addAttribute("nowPage", page);
         return "anime/showAll";
     }
 
