@@ -24,14 +24,15 @@ a
     text-align: center;
 }
 
-.login
+#loginSignUp
 {
-    display: block;
-    text-align: right;
-    margin-right: 3vw;
+    display: flex;
+    justify-content: right;
+    margin-right: 1vw;
     margin-bottom: 0.5vh;
     font-size: 1.2rem;
 }
+
 /*Header end*/
 
 nav
