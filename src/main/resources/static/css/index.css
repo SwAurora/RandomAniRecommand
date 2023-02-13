@@ -5,7 +5,7 @@
     font-family: 'Noto Sans KR', sans-serif;
 }
 
-body
+*
 {
     margin: 0;
     padding: 0;
@@ -18,18 +18,28 @@ a
 }
 
 /*Header start*/
+header
+{
+    height: 12vh;
+    background-color: #f4f0e6;
+}
+
 .main_title
 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
     font-size: 2.5rem;
-    text-align: center;
+    color: gray;
 }
 
 #loginSignUp
 {
+    height: 25%;
     display: flex;
     justify-content: right;
     margin-right: 1vw;
-    margin-bottom: 0.5vh;
     font-size: 1.2rem;
 }
 
@@ -37,10 +47,11 @@ a
 
 nav
 {
-    width: 100%;
+    width: 100vw;
     height: 6vh;
     line-height: 6vh;
-    background-color: gray;
+    margin: 0;
+    background-color: #9dd3a8;
     display: flex;
     justify-content: space-around;
 }
@@ -48,4 +59,48 @@ nav
 nav a
 {
     font-size: 1.5rem;
+    color: white;
+}
+
+section
+{
+    height: 72vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f0e6;
+}
+
+#contents
+{
+    text-align: center;
+}
+
+#contents button
+{
+    width: 200px;
+    height: 50px;
+    font-size: 1.5rem;
+}
+
+#contents span
+{
+    font-size: 1.2rem;
+}
+
+footer
+{
+    width: 100vw;
+    height: 10vh;
+    line-height: 10vh;
+    text-align: center;
+    margin: 0;
+    background-color: gray;
+}
+
+footer p
+{
+    color: white;
+    margin: 0;
 }

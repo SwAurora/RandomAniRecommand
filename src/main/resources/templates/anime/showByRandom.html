@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>랜애추</title>
+    <link rel="stylesheet" th:href="@{/css/index.css}" href="../../static/css/index.css">
+</head>
+<body>
+<header th:replace="~{fragment/header.html :: header}"></header>
+<nav th:replace="~{fragment/nav.html :: nav}"></nav>
+
+<section>
+    <div id="contents">
+        <img th:src="${anime.thumb}" src="#" alt="#" th:attr="onclick=|goInfo('${anime.title}')|"><br>
+        <span th:text="${anime.title}"></span><br><br>
+        <button onclick="reset()">RESET</button>
+    </div>
+</section>
+
+<footer th:replace="~{fragment/footer.html :: footer}"></footer>
+<script th:src="@{/js/showByRandom.js}"></script>
+</body>
+</html>

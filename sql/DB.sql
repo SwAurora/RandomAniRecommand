@@ -14,3 +14,7 @@ create table ANIME
     episodes       varchar2(50),
     primary key (code)
 );
+
+show columns from ANIME;
+
+select * from ANIME order by rand() limit 1;
