@@ -1,0 +1,12 @@
+#contents
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+#contents #idx2
+{
+    margin: auto;
+    padding-left: 5vw;
+    text-align: left;
+}

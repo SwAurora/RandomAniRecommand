@@ -12,7 +12,8 @@
 <section>
     <div id="contents">
         <img th:src="${anime.thumb}" src="#" alt="#" th:attr="onclick=|goInfo('${anime.title}')|"><br>
-        <span th:text="${anime.title}"></span><br><br>
+        <span th:text="${anime.title}"></span><br>
+        <span th:text="|장르: ${anime.genre}|"></span><br><br>
         <button onclick="reset()">RESET</button>
     </div>
 </section>

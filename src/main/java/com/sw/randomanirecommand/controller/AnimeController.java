@@ -42,6 +42,8 @@ public class AnimeController
     @GetMapping("/info")
     public String AnimeInfo(String title, Model model)
     {
+        Anime anime = service.findByTitle(title);
+        model.addAttribute("anime", anime);
         return "anime/info";
     }
 
