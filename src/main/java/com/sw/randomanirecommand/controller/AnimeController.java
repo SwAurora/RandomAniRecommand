@@ -6,7 +6,10 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import java.util.List;
 
 @Controller
 @RequestMapping("/anime")
@@ -26,8 +29,16 @@ public class AnimeController
     @GetMapping("/all")
     public String ShowAll(Model model)
     {
+        List<Anime> animeList = service.findAllByPage(0);
+        model.addAttribute("animeList", animeList);
+        return "anime/showAll";
+    }
 
-        model.addAttribute("", null);
+    @GetMapping("/all/{page}")
+    public String ShowAll(@PathVariable int page, Model model)
+    {
+        List<Anime> animeList = service.findAllByPage(page);
+        model.addAttribute("animeList", animeList);
         return "anime/showAll";
     }
 
