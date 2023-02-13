@@ -40,9 +40,8 @@ public class AnimeController
     }
 
     @GetMapping("/info")
-    public String AnimeInfo(String name, Model model)
+    public String AnimeInfo(String title, Model model)
     {
-        model.addAttribute("name", name);
         return "anime/info";
     }
 

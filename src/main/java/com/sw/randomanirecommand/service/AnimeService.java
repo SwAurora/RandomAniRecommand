@@ -15,4 +15,9 @@ public class AnimeService
     {
         return repository.findByRandom();
     }
+
+    public Anime findByTitle(String title)
+    {
+        return repository.findByTitle(title);
+    }
 }

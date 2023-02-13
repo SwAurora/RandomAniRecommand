@@ -3,7 +3,7 @@ function reset()
     location.href = "/anime/random";
 }
 
-function goInfo(name)
+function goInfo(title)
 {
-    location.href = "/anime/info?name=" + name;
+    location.href = "/anime/info?title=" + title;
 }
