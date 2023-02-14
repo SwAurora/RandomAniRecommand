@@ -6,17 +6,24 @@
     <style>
         #error
         {
-            width:100vw;
-            height:100vh;
-            display:flex;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
+        }
+        #backButton
+        {
+            width: 200px;
+            height: 40px;
         }
     </style>
 </head>
 <body>
 <div id="error">
     <h1>500 Error</h1>
+    <button id="backButton" onclick="history.back()">돌아가기</button>
 </div>
 </body>
 </html>
