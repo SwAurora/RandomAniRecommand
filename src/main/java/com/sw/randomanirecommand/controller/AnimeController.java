@@ -76,7 +76,7 @@ public class AnimeController
     @GetMapping("/year")
     public String ShowByYear()
     {
-        return "redirect:/anime/year/2011/1";
+        return "redirect:/anime/year/2022/1";
     }
 
     @GetMapping("/year/{year}/{page}")

@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () =>
     const nowPageButton = document.querySelector('#now');
     nowPageButton.style.backgroundColor = '#6b8771';
 
-    for(let i = 2011; i <= 2023; i++)
+    for(let i = 2023; i >= 2011; i--)
     {
         if(nowYear === i)
         {
