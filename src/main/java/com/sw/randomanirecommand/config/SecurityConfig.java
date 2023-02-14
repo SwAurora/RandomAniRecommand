@@ -42,6 +42,7 @@ public class SecurityConfig
                 .logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
                 .logoutSuccessUrl("/")
                 .invalidateHttpSession(true)
+                .clearAuthentication(true)
                 .and()
                 .exceptionHandling().accessDeniedPage("/access-denied")
                 .and().build();
