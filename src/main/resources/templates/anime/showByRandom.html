@@ -12,6 +12,12 @@
 
 <section>
     <div id="contents">
+        <label>
+            <select name="genre" id="selectBox">
+                <option value="">전체</option>
+                <option th:each="genre : ${genres}" th:value="${genre}" th:text="${genre}" th:selected="${nowGenre} == ${genre}"></option>
+            </select>
+        </label>
         <img th:src="${anime.thumb}" src="#" alt="#" th:attr="onclick=|goInfo('${anime.title}')|">
         <span th:text="${anime.title}"></span>
         <span th:text="|장르: ${anime.genre}|"></span>

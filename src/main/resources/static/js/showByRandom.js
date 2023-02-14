@@ -1,6 +1,7 @@
 function reset()
 {
-    location.href = "/anime/random";
+    const selectBox = document.querySelector('#selectBox');
+    location.href = "/anime/random?genre=" + selectBox.value;
 }
 
 function goInfo(title)

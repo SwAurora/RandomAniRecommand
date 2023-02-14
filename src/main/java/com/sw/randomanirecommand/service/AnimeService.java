@@ -19,6 +19,11 @@ public class AnimeService
         return repository.findByRandom();
     }
 
+    public Anime findByGenreRandom(String genre)
+    {
+        return repository.findByGenreRandom(genre);
+    }
+
     public Anime findByTitle(String title)
     {
         return repository.findByTitle(title);
@@ -42,5 +47,10 @@ public class AnimeService
     public int getCountByYear(int year)
     {
         return repository.countByAiringYear(year);
+    }
+
+    public List<String> findGenre()
+    {
+        return repository.findGenre();
     }
 }

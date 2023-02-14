@@ -7,6 +7,19 @@
     align-items: center;
 }
 
+#contents label
+{
+    margin-bottom: 2vh;
+}
+
+#contents select
+{
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
 #contents button
 {
     margin-top: 4vh;

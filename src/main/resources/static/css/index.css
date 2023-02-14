@@ -30,9 +30,13 @@ header
     justify-content: center;
     align-items: center;
     height: 75%;
+}
+
+.main_title h1
+{
     font-size: 2.5rem;
     color: gray;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 #loginSignUp
