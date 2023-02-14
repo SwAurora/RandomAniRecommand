@@ -25,6 +25,13 @@ public class MemberController
         return "member/login";
     }
 
+    @GetMapping("/login/error")
+    public String loginError(Model model)
+    {
+        model.addAttribute("errorMessage", "아이디 또는 비밀번호가 틀렸습니다.");
+        return "member/login";
+    }
+
     @GetMapping("/signUp")
     public String signUp(Model model)
     {
@@ -51,5 +58,11 @@ public class MemberController
         }
 
         return "redirect:/";
+    }
+
+    @GetMapping("/access-denied")
+    public String accessDenied()
+    {
+        return "redirect:/login";
     }
 }

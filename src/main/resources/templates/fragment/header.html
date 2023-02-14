@@ -3,6 +3,9 @@
         <h1 onclick="location.href='/'">랜애추</h1>
     </div>
     <div id="login">
-        <a href="/login" class="login">로그인</a>
+        <a sec:authorize="!isAuthenticated()" class="login" th:href="@{/login}">로그인</a>
+        <form th:action="@{/logout}" method="POST" sec:authorize="isAuthenticated()" id="logOut">
+            <a class="login" style="cursor: pointer" onclick="document.getElementById('logOut').submit()">로그아웃</a>
+        </form>
     </div>
 </header>
