@@ -1,0 +1,72 @@
+#contents
+{
+    width: 100vw;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#contents span
+{
+    font-size: 1rem;
+}
+
+.List
+{
+    width: 10%;
+    padding-top: 3vh;
+}
+
+.List span
+{
+    display: inline-block;
+    width: 150px;
+}
+
+.List img
+{
+    width: 150px;
+    height: 200px;
+    cursor: pointer;
+}
+
+#pagination
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 7.3vh;
+}
+
+#pagination a
+{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #9dd3a8;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    border: 1px solid lightgray;
+    margin-right: 2px;
+}
+
+.nav2
+{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid #9dd3a8;
+}
+
+.nav2 a
+{
+    width: 8%;
+    text-align: center;
+}
+
+#nowYear
+{
+    background-color: #9dd3a8;
+    color: white;
+}

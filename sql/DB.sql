@@ -18,3 +18,5 @@ create table ANIME
 show columns from ANIME;
 
 select * from ANIME order by rand() limit 1;
+
+select * from ANIME where airingyear = 2012 order by code desc;

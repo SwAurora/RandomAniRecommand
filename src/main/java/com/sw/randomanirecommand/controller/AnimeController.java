@@ -47,10 +47,21 @@ public class AnimeController
     }
 
     @GetMapping("/year")
-    public String ShowByYear(Model model)
+    public String ShowByYear()
     {
+        return "redirect:/anime/year/2011/1";
+    }
 
-        model.addAttribute("", null);
+    @GetMapping("/year/{year}/{page}")
+    public String ShowByYear(@PathVariable int year, @PathVariable int page, Model model)
+    {
+        List<Anime> animeList = service.findByAiringYearPage(year, page - 1, ROW);
+        model.addAttribute("animeList", animeList);
+        long count = service.getCountByYear(year);
+        model.addAttribute("total", count);
+        model.addAttribute("row", ROW);
+        model.addAttribute("nowPage", page);
+        model.addAttribute("nowYear", year);
         return "anime/showByYear";
     }
 

@@ -33,4 +33,14 @@ public class AnimeService
     {
         return repository.count();
     }
+
+    public List<Anime> findByAiringYearPage(int year, int page, int row)
+    {
+        return repository.findByAiringYearPage(year, PageRequest.of(page, row));
+    }
+
+    public int getCountByYear(int year)
+    {
+        return repository.countByAiringYear(year);
+    }
 }
