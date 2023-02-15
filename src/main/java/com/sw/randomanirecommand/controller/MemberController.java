@@ -57,7 +57,7 @@ public class MemberController
             return "member/signUp";
         }
 
-        return "redirect:/";
+        return "redirect:/login";
     }
 
     @GetMapping("/access-denied")

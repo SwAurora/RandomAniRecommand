@@ -31,7 +31,6 @@
     <div id="comments">
         <form th:action="@{/anime/comment}" method="post" id="commentForm" sec:authorize="isAuthenticated()">
             <textarea id="commentInput" name="comment" placeholder="내용을 입력해 주세요." maxlength="200"></textarea>
-            <input type="hidden" name="title" th:value="${anime.title}">
             <input type="hidden" name="code" th:value="${anime.code}">
             <button type="button" onclick="commentCheck()">작성</button>
         </form>

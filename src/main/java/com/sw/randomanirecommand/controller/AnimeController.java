@@ -6,6 +6,7 @@ import com.sw.randomanirecommand.domain.Member;
 import com.sw.randomanirecommand.service.AnimeService;
 import com.sw.randomanirecommand.service.CommentService;
 import com.sw.randomanirecommand.service.MemberService;
+import jakarta.servlet.http.HttpServletRequest;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.repository.query.Param;
@@ -13,8 +14,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
-import java.net.URLEncoder;
-import java.nio.charset.StandardCharsets;
 import java.security.Principal;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -116,9 +115,8 @@ public class AnimeController
     }
 
     @PostMapping("/comment")
-    public String animeReview(String title, @RequestParam("comment") String paramComment, Long code, Principal principal)
+    public String animeReview(@RequestParam("comment") String paramComment, Long code, Principal principal, HttpServletRequest request)
     {
-        String encodedTitle = URLEncoder.encode(title, StandardCharsets.UTF_8);
         String uid = principal.getName();
         Member member = memberService.findByUid(uid);
         Comment comment = new Comment();
@@ -128,7 +126,8 @@ public class AnimeController
 
         commentService.saveComment(comment);
 
-        return "redirect:/anime/info?title=" + encodedTitle;
+        String referer = request.getHeader("Referer");
+        return "redirect:" + referer;
     }
 
     private String replaceEntityCode(String sentence)
