@@ -58,19 +58,19 @@ section
 
 #comments button
 {
-    width: 90px;
+    width: 4.5vw;
     height: 54px;
 }
 
 #commentInput
 {
-    width: 1100px;
+    width: 65vw;
     height: 50px;
 }
 
 #commentTable
 {
-    width: 1200px;
+    width: 70vw;
     table-layout: fixed;
 }
 
