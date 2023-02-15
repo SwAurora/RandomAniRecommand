@@ -20,16 +20,12 @@ a
 /*Header start*/
 header
 {
-    height: 12vh;
-    background-color: #f4f0e6;
-}
-
-.main_title
-{
+    width: 100vw;
+    height: 6vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    height: 75%;
+    background-color: #f4f0e6;
 }
 
 .main_title h1
@@ -41,11 +37,7 @@ header
 
 #login
 {
-    height: 25%;
-    display: flex;
-    justify-content: right;
-    margin-right: 1.5vw;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 /*Header end*/
@@ -53,8 +45,8 @@ header
 nav
 {
     width: 100vw;
-    height: 6vh;
-    line-height: 6vh;
+    height: 5vh;
+    line-height: 5vh;
     margin: 0;
     background-color: #9dd3a8;
     display: flex;
@@ -69,7 +61,7 @@ nav a
 
 section
 {
-    height: 72vh;
+    height: 81vh;
     margin: 0 auto;
     background-color: #f4f0e6;
 }
@@ -94,8 +86,8 @@ section #main
 footer
 {
     width: 100vw;
-    height: 10vh;
-    line-height: 10vh;
+    height: 8vh;
+    line-height: 8vh;
     text-align: center;
     margin: 0;
     background-color: gray;
