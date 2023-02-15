@@ -1,4 +1,4 @@
-package com.sw.randomanirecommand.domain;
+package com.sw.randomanirecommand.form;
 
 import jakarta.validation.constraints.Pattern;
 import lombok.AllArgsConstructor;

@@ -28,6 +28,20 @@
             <button onclick="goBack()">돌아가기</button>
         </div>
     </div>
+    <div id="comments">
+        <form th:action="@{/anime/comment}" method="post" id="commentForm" sec:authorize="isAuthenticated()">
+            <textarea id="commentInput" name="comment" placeholder="내용을 입력해 주세요." maxlength="200"></textarea>
+            <input type="hidden" name="title" th:value="${anime.title}">
+            <input type="hidden" name="code" th:value="${anime.code}">
+            <button type="button" onclick="commentCheck()">작성</button>
+        </form>
+        <table id="commentTable">
+            <tr th:each="comment : ${comments}" class="commentTr">
+                <td th:text="${comment.nickName}" class="commentTd"></td>
+                <td th:utext="${comment.comment}" class="commentTd"></td>
+            </tr>
+        </table>
+    </div>
 </section>
 
 <footer th:replace="~{fragment/footer.html :: footer}"></footer>

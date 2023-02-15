@@ -1,7 +1,10 @@
 package com.sw.randomanirecommand.domain;
 
+import com.sw.randomanirecommand.form.MemberForm;
 import jakarta.persistence.*;
-import lombok.*;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 import org.hibernate.annotations.CreationTimestamp;
 import org.springframework.security.crypto.password.PasswordEncoder;
 

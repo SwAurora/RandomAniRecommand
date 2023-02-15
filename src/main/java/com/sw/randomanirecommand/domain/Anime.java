@@ -13,7 +13,7 @@ import lombok.ToString;
 public class Anime
 {
     @Id
-    private long code;
+    private Long code;
     private String title;
     private String thumb;
     private String originalTitle;

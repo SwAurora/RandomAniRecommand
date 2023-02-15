@@ -27,7 +27,6 @@ public class SecurityConfig
         return http
                 .csrf().disable()
                 .authorizeHttpRequests()
-                .requestMatchers("/board").hasRole("USER")
                 .requestMatchers("/**").permitAll()
                 .and()
                 .formLogin()
@@ -51,7 +50,7 @@ public class SecurityConfig
     @Bean
     public WebSecurityCustomizer webSecurityCustomizer()
     {
-        return (web) -> web.ignoring().requestMatchers("/css/**", "/js/**", "/fragment/**");
+        return (web) -> web.ignoring().requestMatchers("/css/**", "/js/**");
     }
 
     @Bean

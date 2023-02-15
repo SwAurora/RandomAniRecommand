@@ -23,6 +23,11 @@ public class MemberService implements UserDetailsService
         repository.save(member);
     }
 
+    public Member findByUid(String uid)
+    {
+        return repository.findByUid(uid);
+    }
+
     private void validateDuplicateMember(Member member)
     {
         Member findByUid = repository.findByUid(member.getUid());

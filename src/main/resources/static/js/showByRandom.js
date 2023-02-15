@@ -6,5 +6,7 @@ function reset()
 
 function goInfo(title)
 {
+    title = title.replace('\`', '%60');
+    title = title.replace('\&', '%26');
     location.href = "/anime/info?title=" + title;
 }

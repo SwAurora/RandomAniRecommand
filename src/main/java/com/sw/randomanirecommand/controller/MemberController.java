@@ -1,7 +1,7 @@
 package com.sw.randomanirecommand.controller;
 
 import com.sw.randomanirecommand.domain.Member;
-import com.sw.randomanirecommand.domain.MemberForm;
+import com.sw.randomanirecommand.form.MemberForm;
 import com.sw.randomanirecommand.service.MemberService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
