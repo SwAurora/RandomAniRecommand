@@ -6,16 +6,31 @@ section
     flex-direction: column;
 }
 
+#animeTitle
+{
+    margin-bottom: 1vh;
+}
+
 #contents
 {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
-#contents #idx2
+#idx1 img
+{
+    width: 14vw;
+}
+
+#idx1
+{
+    padding-top: -1vw;
+}
+
+#idx2
 {
     margin: auto;
-    padding-left: 5vw;
+    padding-left: 2vw;
     text-align: left;
 }
 

@@ -11,9 +11,9 @@
 <nav th:replace="~{fragment/nav.html :: nav}"></nav>
 
 <section>
+    <h1 id="animeTitle" th:text="${anime.title}"></h1>
     <div id="contents">
         <div id="idx1">
-            <h1 th:text="${anime.title}"></h1>
             <img th:src="${anime.thumb}" src="#" alt="#">
         </div>
         <div id="idx2">
@@ -24,7 +24,7 @@
             분류: <span th:text="${anime.classification}"></span><br>
             방영일: <span th:text="${anime.airingDate}"></span><br>
             등급: <span th:text="${anime.grade}"></span><br>
-            회차: <span th:text="${anime.episodes}"></span><br><br><br>
+            회차: <span th:text="${anime.episodes}"></span><br><br>
             <button onclick="goBack()">돌아가기</button>
         </div>
     </div>

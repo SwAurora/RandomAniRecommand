@@ -1,6 +1,6 @@
 #contents
 {
-    height: 72vh;
+    height: 81vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,6 +27,7 @@
 
 #contents img
 {
+    width:18vw;
     cursor: pointer;
 }
 

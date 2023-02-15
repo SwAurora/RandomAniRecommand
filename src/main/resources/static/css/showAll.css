@@ -21,12 +21,12 @@
 .List span
 {
     display: inline-block;
-    width: 150px;
+    width: 9vw;
 }
 
 .List img
 {
-    width: 9vw;
+    width: 8vw;
     cursor: pointer;
 }
 
