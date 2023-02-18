@@ -2,8 +2,8 @@
 http://www.randomanime.kro.kr
 
 # ✨ 만들게 된 계기
-> **친구의 요청으로 만들게 된 사이트<br>
-> 어떤 애니메이션을 볼지 고민하는 분들을 위해 랜덤으로 추천해주는 사이트를 만들게되었습니다.**
+> **친구의 요청으로 만들게 된 1인 프로젝트<br>
+> 어떤 애니메이션을 볼지 고민하는 분들을 위해 랜덤으로 추천해주는 사이트를 만들게되었습니다.**<br>
 > ※ 랜애추  = <span style="color:orange">랜</span>덤 <span style="color:orange">애</span>니메이션 <span style="color:orange">추</span>천
 
 # ⌛ 사전작업
