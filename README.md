@@ -8,7 +8,7 @@ http://www.randomanime.kro.kr
 
 # ⌛ 사전작업
 
-- 애니메이션 사이트에서 Jsoup으로 애니메이션 정보 크롤링
+- 애니메이션 사이트에서 Jsoup으로 애니메이션 정보 크롤링<br>
   https://github.com/SwAurora/AnimeCrawling
 
 # 🔧 적용기술
